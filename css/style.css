@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+#uitleg-jquery{
+    font-family: Verdana, Geneva, sans-serif;
+    display: none;
+    max-width: 700px;
+    background-color: #dc3545;
+    border: 5px solid #b01927;
+    color: white;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.answer-list{
+    height: 0;
+    opacity: 0;
+}
+
+#secret-start:hover{
+    cursor: pointer;
+    background-color: #26ed26;
+}
+
+.answer-list{
+    background-color: #3270db;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+}
+
+#score-status-container{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
+    z-index: 999;
+    background-color: #46bd4d;
+    border: 5px solid #2f9c36;
+    border-radius: 50%;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+.error{
+    font-size: 1em !important;
+    color: red;
+}
+
+.form-label{
+    font-size: 1.5em !important;
+}
+
+.main-container {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.canvas {
+    width: 70vw;
+    height: 70vh;
+    max-width: 700px;
+    background-color: #61c9f2;
+    border: 5px solid #3270db;
+    border-radius: 30px;
+    padding: 40px;
+    -webkit-box-shadow: 10px -10px 0px 1px rgba(138, 133, 138, 1);
+    -moz-box-shadow: 10px -10px 0px 1px rgba(138, 133, 138, 1);
+    box-shadow: 10px -10px 0px 1px rgba(138, 133, 138, 1);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.quiz-content p,
+#btndifficulty p,
+.text-scoreboard {
+    font-size: 1.4em;
+}
+
+.quiz-content img,
+#btndifficulty img {
+    width: 100% !important;
+}
+
+.myButton {
+    padding: 52px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px -10px 0px 1px rgba(138, 133, 138, 1);
+    -moz-box-shadow: 8px -10px 0px 1px rgba(138, 133, 138, 1);
+    box-shadow: 8px -10px 0px 1px rgba(138, 133, 138, 1);
+}
+
+.sluiten {
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+    -moz-box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+    box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+}
+
+.myButtonSmall {
+    padding: 10px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+    -moz-box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+    box-shadow: 6px -8px 0px 1px rgba(138, 133, 138, 1);
+}
+
+label,
+.textInputFrom {
+    font-size: 2em !important;
+}
+
+.btn-group-vertical input {
+    display: none;
+}
+
+table {
+    font-size: 1.2em;
+}
+
+#formulierScorebord{
+    display: none;
+}

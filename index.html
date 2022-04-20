@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container flex-column">
+        <p class="text-center text-muted my-4">De Batselier Michal r0808913 GPR a1.2</p>
+        <div id="flip-container">
+            <div class="front">
+                <div class="container canvas align-middle">
+                    <div class="row quiz-content">
+                        <div class="col-12 mb-2">
+                            <img src="img/logo.png" alt="logo-quiz">
+                            <h1 class="text-center">Welcome to the quiz.</h1>
+                            <p class="text-center">Press <span id="secret-start">START</span> to choose a quiz. After 10
+                                questions you will be asked to enter
+                                your name. After that your score will appear on the scoreboard.</p>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-danger btn-block myButton" href="quiz.html" role="button">START</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-warning btn-block myButton" href="scorebord.html"
+                                role="button">SCOREBOARD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="container canvas align-middle">
+                    <a class="sluiten btn btn-primary text-light" id="flip-home">MENU</a>
+                    <div class="row quiz-content">
+                        <div class="col-12 mb-2">
+                            <h2 class="text-center">Quiz answers</h2>
+                            <p class="text-center mt-3">Congratulations! You have found the secret. Here are all the
+                                correct answers.</p>
+                        </div>
+                        <div class="col-5 answer-list">
+                            <h5>EXPERT QUIZ</h5>
+                                <hr>
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>Question 1: B</li>
+                                    <li>Question 2: C</li>
+                                    <li>Question 3: A</li>
+                                    <li>Question 4: B</li>
+                                    <li>Question 5: A</li>
+                                    <li>Question 6: A</li>
+                                    <li>Question 7: B</li>
+                                    <li>Question 8: D</li>
+                                    <li>Question 9: C</li>
+                                    <li>Question 10: C</li>
+                                </ul>
+                                <p id="test"></p>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-5 answer-list">
+                            <h5>BEGINNER QUIZ</h5>
+                                <hr>
+                                <ul class="p-0 m-0 list-unstyled">
+                                    <li>Question 1: B</li>
+                                    <li>Question 2: C</li>
+                                    <li>Question 3: A</li>
+                                    <li>Question 4: B</li>
+                                    <li>Question 5: A</li>
+                                    <li>Question 6: A</li>
+                                    <li>Question 7: B</li>
+                                    <li>Question 8: D</li>
+                                    <li>Question 9: C</li>
+                                    <li>Question 10: C</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="btn-info" class="my-4 btn btn-primary">jQuery UITLEG</button>
+        <div class="container mb-4 text-center" id="uitleg-jquery">
+            <ol>
+                <li class="mb-3">Als je op START in de paragraaf zelf klikt zullen er enkele animaties gebeuren. Deze maakt gebruik van een plugin. Als je daarna op MENU klikt zal je terug op het menu terecht komen.</li>
+                <li class="my-3">Als je de quiz maakt, zal er nu bij elke vraag jou score op komen. Als je de vraag juist had wordt deze melding groen. Als je de vraag fout had krijg je deze melding in het rood. Je kan de melding ook sneller weg klikken.</li>
+                <li class="my-3">Als je de quiz hebt voltooid zal er nu een formulier zijn dat je moet invulled er zal ook validatie op het forumier gebeuren. Als dit juist is ingevuld wordt je naar het scorebord gebracht.</li>
+            </ol>
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/plugins/jquery.flip.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container flex-column">
+        <p class="text-center text-muted my-4">De Batselier Michal r0808913 GPR a1.2</p>
+        <div class="container canvas align-middle">
+            <a href="index.html" class="sluiten btn btn-primary">MENU</a>
+            <div id="quiz">
+                <div class="row quiz-content" id="btndifficulty">
+                    <div class="col-12 mb-2">
+                        <h1 class="text-center">Choose a quiz!</h1>
+                        <p class="text-center">Make a choice what quiz you want to try. <br><span
+                                class="text-danger">NOTE: Be carefull choosing
+                                the expert quiz!</span></p>
+                        <img src="img/matrix.gif" alt="matrix-gif" class="pb-4">
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-danger btn-block myButton" value="vragen2"
+                            onclick="startSpel(this.value)">EXPERT</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-primary btn-block myButton" value="vragen1"
+                            onclick="startSpel(this.value)">BEGINNER</button>
+                    </div>
+                </div>
+                <div id="quizVragen" style="display: none;">
+                    <h1 id="vraag" class="text-center mb-4">Vraag 1</h1>
+                    <div id="vragenReeks" class="btn-group-vertical w-100" data-toggle="buttons">
+                        <label class="btn btn-warning">
+                            <input type="radio" name="vragen" id="antwoordA" autocomplete="off"><span
+                                id="lblAntwoord0">Antwoord</span>
+                        </label>
+                        <label class="btn btn-warning">
+                            <input type="radio" name="vragen" id="antwoordB" autocomplete=" off"><span
+                                id="lblAntwoord1">Antwoord</span>
+                        </label>
+                        <label class="btn btn-warning">
+                            <input type="radio" name="vragen" id="antwoordC" autocomplete=" off"><span
+                                id="lblAntwoord2">Antwoord</span>
+                        </label>
+                        <label class="btn btn-warning">
+                            <input type="radio" name="vragen" id="antwoordD" autocomplete=" off"><span
+                                id="lblAntwoord3">Antwoord</span>
+                        </label>
+                    </div>
+                    <button id="volgendeVraag" onclick="validateAnswer()"
+                        class="myButtonSmall btn btn-success btn-block mt-4">Volgende vraag</button>
+                </div>
+            </div>
+            <div id="score-status-container">
+                <p id="score-status" class="m-0">0 / 10</p>
+            </div>
+            <div id="formulierScorebord" class="cmxform">
+                <p class="text-center textInputFrom">Please give your info<br>to be added to the scoreboard!</p>
+
+                <form id="user-form">
+                    <fieldset>
+                        <p class="m-0">
+                            <label class="form-label" for="invoerNaam">Username:</label>
+                            <input class="form-control" id="invoerNaam" name="name" type="text" required>
+                        </p>
+                        <p class="m-0">
+                            <label class="form-label" for="cemail">E-Mail</label>
+                            <input class="form-control" id="cemail" type="email" name="email" required>
+                        </p>
+                        <p class="m-0"> 
+                            <label class="form-label" for="ccomment">Your comment</label>
+                            <textarea class="form-control" id="ccomment" name="comment" required></textarea>
+                        </p>
+                        <p class="m-0">
+                            <button type="submit" href="scorebord.html" onclick="scoreOpslaan()" id="btnToevoegen"
+                                class="myButtonSmall btn btn-success btn-block mt-4">Add to scoreboard</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

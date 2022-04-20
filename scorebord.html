@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container flex-column">
+        <p class="text-center text-muted my-4">De Batselier Michal r0808913 GPR a1.2</p>
+        <div class="container canvas align-middle">
+            <a href="index.html" class="sluiten btn btn-primary">MENU</a>
+            <h1 class="text-center">The scoreboard</h1>
+            <p class="text-center text-scoreboard">Here you can see the 5 most recent scores from the quiz. Feel free to
+                try and beat the scores!</p>
+            <table class="table table-warning mt-4" cellpadding="10" id="scorebordTable">
+                <tr>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                </tr>
+            </table>
+            <a class="btn btn-success btn-block mt-4 myButtonSmall" href="quiz.html" role="button">START NEW QUIZ</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scorebord.js"></script>
+</body>
+
+</html>
